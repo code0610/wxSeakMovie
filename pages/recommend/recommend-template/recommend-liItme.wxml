@@ -1,0 +1,6 @@
+<template name="liItme">
+    <view class='box_li'>
+      <text>{{ listsItem.title }}</text>
+      <image src='{{ listsItem.imageUrl }}'/>
+    </view>
+</template>

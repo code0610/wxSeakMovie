@@ -1,0 +1,22 @@
+<import src="movieList/movieList-template" />
+<import src="movie-template/movie-item-template" />
+<view>
+  <!-- 搜索框 -->
+  <view class="search">
+    <icon type='search' class="search-img" size="13" color="#405f80"></icon>
+    <input type='text' value='{{ inputText }}' placeholder="一出好戏、大师兄" placeholder-class="input-placeholder" bindfocus="onsearchFocus" bindblur="onsearchBlur"/>
+    <image wx:if="{{ isInputShow }}" src='/images/icon/xx.png' class="xx-img" catchtap='closeSearch'></image>
+  </view>
+  <!-- 电影的初始内容 -->
+  <view wx:if="{{ !isInputShow }}">
+    <template is="movieList" data="{{ ...intheatersData }}"/>
+    <template is="movieList" data="{{ ...comingSoonData }}" />
+    <template is="movieList" data="{{ ...top250Data }}"/>
+  </view>
+  <!-- 搜索的内容 -->
+  <view class="search-panel" wx:if="{{ isInputShow }}">
+    <block wx:for="{{ searchMovies }}" wx:for-item="searchMoiveItem">
+      <template is="movieItem" data="{{ ...searchMoiveItem }}"/>
+    </block>
+  </view>
+</view>

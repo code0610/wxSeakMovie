@@ -1,0 +1,9 @@
+<!--pages/movies/more-movie/more-movie.wxml-->
+<import src="../movie-template/movie-item-template" />
+<scroll-view scroll-y="true" bindscrolltolower="scrolltolower" class="grid-container">
+  <block wx:for="{{ movies }}" wx:for-item="movieItem2">
+    <view class="single-view-container">
+      <template is="movieItem" data="{{ ...movieItem2 }}"/>
+    </view>
+  </block>
+</scroll-view>

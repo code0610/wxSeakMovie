@@ -1,0 +1,15 @@
+<!--pages/videos/video.wxml-->
+<view>
+  <view class="item-container" wx:for="{{ videos }}" wx:for-item="videoItem">
+    <view class="cover-container">
+      <text wx:if="{{ !videoItem.isVideoPlay }}" class="text">{{ videoItem.title }}</text>
+      <image wx:if='{{ !videoItem.isVideoPlay }}' class="playbtn" data-videoId="{{ videoItem.id }}" src="/images/tab/video_selected.png" catchtap='playVideo'></image>
+      <image wx:if='{{ !videoItem.isVideoPlay }}' class='movieBgImage' src='{{ videoItem.videoBgImage }}'></image>
+      <video id="{{ 'video'+videoItem.id }}" objectFit="fill" src='{{ videoItem.video }}'>
+      
+      </video>
+    </view>
+    <text class="bottom-text">街角转身 评论 24 </text>
+  </view>
+
+</view>

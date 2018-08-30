@@ -1,0 +1,10 @@
+/* pages/movies/more-movie/more-movie.wxss */
+@import "../movie-template/movie-item-template";
+.single-view-container{
+    float:left;
+    margin-bottom: 40rpx;
+}
+.grid-container{
+    height: 1300rpx;
+    margin:40rpx 0 40rpx 6rpx;
+}

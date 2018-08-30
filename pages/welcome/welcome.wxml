@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='box'>
+    <view class='logo'>
+      <image src='../../images/avatar/1.png'/>
+    </view>
+    <view class='submit'>
+      <text bindtap='login'>登录</text> 
+    </view>
+</view>

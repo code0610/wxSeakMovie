@@ -1,0 +1,25 @@
+<!--pages/recommend/recommend.wxml-->
+<import src="recommend-template/recommend-liItme.wxml" />
+<view class='box'> 
+    <view wx:for="{{lists}}" wx:for-item="listsItem">
+     <template is="liItme" data="{{ listsItem }}"/>
+    </view>
+  <!-- <view wx:for="{{ lists }}" wx:for-item="listsItem" class='box_li' wx:for-index="id">
+      <text>{{ listsItem.title }}</text>
+      <image src='{{ listsItem.imageUrl }}'/>
+    </view> -->
+    <!-- <view class='box_li'>
+      <text>{{ li2.title }}</text>
+      <image src='../../images/recommend/lianghui.jpg'/>
+    </view> -->
+    <view class='box_li2'>
+      <view class='box_li2_img'>
+          <image src='../../images/recommend/telangpu.jpg'/>
+          <image src='../../images/recommend/yingda1.jpg'/>
+          <image src='../../images/recommend/yingda2.jpg' />
+      </view>
+      <view class='box_li2_text'>
+          <text>这里显示今日头条的内容</text>
+      </view>
+    </view>
+</view>

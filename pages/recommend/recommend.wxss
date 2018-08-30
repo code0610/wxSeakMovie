@@ -1,0 +1,38 @@
+/* pages/recommend/recommend.wxss */
+@import "recommend-template/recommend-liItme.wxss";
+.box_li{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  padding: 20rpx;
+  border-bottom: solid 1rpx #cccc;
+}
+
+.box_li text{
+  height: 250rpx;
+  display: flex;
+}
+
+.box_li image{
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.box_li2{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  border-bottom: solid 1rpx #cccc;
+}
+.box_li2_img{
+  display: flex;
+  justify-content: space-between;
+}
+.box_li2_img image{
+  width: 230rpx;
+  height: 180rpx;
+}
+.box_li2_text{
+  margin-top: 20rpx;
+
+}
